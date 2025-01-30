@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method=""><!--method post is used to submit info without showing in url for security,no size limitation...default is "get" size is 3000 char-->
+        <label for="uname">Enter Name</label>
+        <input type="text" name="ABC" id="uname" size="30" maxlength="5" placeholder="Enter Name" value="Anil" required>
+        <br><br><!--"id" in input should be same as "for" in label-->
+        <label for="pass">Enter Password</label>
+        <input type="password" name="ABC" id="pass" placeholder="Enter Password" required>
+        <br><br>
+        <label for="email">Enter E-mail</label>
+        <input type="email" name="XYZ" id="email" placeholder="Enter E-mail" required><br><br>
+        <label for="review">Write a review</label><br>
+        <textarea name="review" id="review" rows="6" cols="40"></textarea>
+        <br><br>
+        <label for="filesel">Choose file:</label>
+        <input type="file" name="filesel" id="filesel" accept="image/*"><br><br>
+        <label for="hobby">Choose your hobbies:</label>
+        <input type="checkbox" name="hobby" id="hobby" value="read">reading
+        <input type="checkbox" name="hobby" id="hobby" checked value="play">playing
+        <input type="checkbox" name="hobby" id="hobby" value="draw">drawing
+        <br><br>
+        
+        <label for="course">Select course:</label>
+        <input type="radio" name="course" id="btech" value="btech" checked>
+        <label for="btech">B.Tech</label>
+        <input type="radio" name="course" id="bca" value="bca">
+        <label for="bca">BCA</label>
+        <input type="radio" name="course" id="barch" value="barch">
+        <label for="barch">B.Arch</label><br><br>
+        <label for="statesel" >Select State</label>
+        <select name="statesel" id="statesel" size="3" multiple>
+            <option value="choose">Choose your select</option>
+            <option value="raj" selected>Rajasthan</option>
+            <option value="pun">Punjab</option>
+            <option value="har">Haryana</option>
+        </select>
+
+        <br><br><input type="submit" value="submit form" name="submitform" id="submitform">&nbsp;&nbsp;&nbsp;
+        <input type="reset" value="reset form" name="reset form" id="reset form"><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="image" name="imagesel" id="imagesel" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTKj11ycbh3T3zKVUxVeSnSpHUyqNohQ_YTQ&s" width="100" height="50">
+
+
+    </form>
+</body>
+</html>

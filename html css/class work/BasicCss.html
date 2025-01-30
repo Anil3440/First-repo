@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* type selector */
+        h1{
+            color:red;
+            background-color:aquamarine;
+            font-family: 'Courier New', Courier, monospace;
+            font-style: italic;
+        }
+        /* Attribute selector */
+        a[href="ex(table).html"]{
+            background-color: aquamarine;
+        }
+        a[href="index.html"]{
+            background-color:rgb(235, 139, 139);
+        }
+        /* Id Selector */
+        #id1{
+            background-color: blue;
+        }
+        #id2{
+            background-color:bisque
+        }
+        /* Class selector */
+        .c1{
+            background-color:navy;
+        }
+        /* Universal Selector */
+        *{
+            background-color: rgb(24, 194, 197);
+        }
+        /* Pseudo Selector */
+        h4:hover{
+            color:red;
+            background-color:aquamarine;
+            font-family: 'Courier New', Courier, monospace;
+            font-style: italic;
+        }
+        /* Combinator Selector */
+        .d1 p{
+            background-color: rgb(151, 83, 83);
+        }
+        /* Grouping selector */
+        /* h1,h2,h3{} */
+        p{
+            color:orange;
+        }
+        
+    </style>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <h1>Front End Class- INT219</h1>
+    <h2 class="c1">Front End Class- INT219</h2>
+    <h3 class="c1">Front End Class- INT219</h3>
+    <h4>Front End Class- INT219</h4>
+    <p id="id1">Para1</p>
+    <p id="id2">Para2</p>
+    <a href="ex(table).html">Table1</a>
+    <a href="index.html">Table1</a>
+    <div class="d1"><p>This is para in div</p></div>
+    <p>This is para</p>
+</body>
+</html>

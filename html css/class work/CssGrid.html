@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: aqua;
+            border:20px red solid;
+            padding:20px;
+            display:grid;
+            /* grid-template-columns:20% auto 50%;
+            grid-template-rows:100px 200px 100px; */
+            grid-template:150px 100px/auto auto ;
+            /*  rows/columns  */
+            /* grid-row-gap:10px;
+            grid-column-gap:20px; */
+            grid-gap:10px 20px;
+            
+        }
+        .item{
+            border:2px solid orange;
+            padding:5px;
+            margin:0.5px;
+            background-color: bisque;
+        }
+        #i3{
+            /* grid-row-start:2;
+            grid-row-end:span 3; */
+            grid-row:2/4;
+        }
+        #i7{
+            grid-column-start:3;
+            grid-column-end:5;
+        }
+        /* #i9{
+            grid-area:3  
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item1</div>
+        <div class="item">Item2</div>
+        <div class="item" id="i3">Item3</div>
+        <div class="item">Item4</div>
+        <div class="item">Item5</div>
+        <div class="item">Item6</div>
+        <div class="item" id="i7">Item7</div>
+        <div class="item">Item8</div>
+        <div class="item" id="i9">Item9</div>
+        <div class="item">Item10</div>
+    </div>
+</body>
+</html>
